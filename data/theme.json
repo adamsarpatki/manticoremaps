@@ -16,16 +16,16 @@
     },
     "darkmode": {
       "theme_color": {
-        "primary": "#fff",
-        "body": "#1c1c1c",
-        "border": "#3E3E3E",
-        "light": "#222222",
-        "dark": "#fff"
+        "primary": "oklch(98.5% 0 0)",
+        "body": "oklch(21% 0.006 285.885)",
+        "border": "oklch(55.2% 0.016 285.938)",
+        "light": "oklch(27.4% 0.006 286.033)",
+        "dark": "oklch(98.5% 0 0)"
       },
       "text_color": {
-        "text": "#B4AFB6",
-        "text-dark": "#fff",
-        "text-light": "#B4AFB6"
+        "text": "oklch(92% 0.004 286.32)",
+        "text-dark": "oklch(98.5% 0 0)",
+        "text-light": "oklch(92% 0.004 286.32)"
       }
     }
   },
