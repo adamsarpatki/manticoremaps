@@ -1,13 +1,12 @@
 {{ define "main" }}
-  <section class="section-sm">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="md:col-10 lg:col-7 text-left">
-          {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h2 class="h3 mb-6">{{ .Title }}</h2>
-          <div class="content">{{ .Content }}</div>
-        </div>
+<section class="section-sm">
+  <div class="container">
+    <div class="flex flex-col justify-center">
+      <div class="flex flex-col self-center md:w-10/12 lg:w-7/12 text-left mb-8">
+        <h2 class="h3 mb-6">{{ .Title }}</h2>
+        <div class="content">{{ .Content }}</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {{ end }}
