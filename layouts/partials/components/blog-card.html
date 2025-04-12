@@ -1,17 +1,26 @@
-<div class="bg-body dark:bg-darkmode-body">
-  {{ $image:= .Params.image }}
-  {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
-  {{ end }}
-  <h4 class="mb-1">
-    <a href="{{ .RelPermalink }}">
-      {{ .Title }}
-    </a>
-  </h4>
-  <p class="mb-6 italic">{{ .Params.lead }}</p>
-  {{ $categories:= .Params.categories }}
-  {{ if $categories }}
-    <ul class="mb-4">
+<div class="flex flex-col bg-body dark:bg-darkmode-body content-between gap-y-4">
+  <div class="">
+    {{ $image:= .Params.image }}
+    {{ if $image }}
+    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
+    {{ end }}
+  </div>
+  <div class="flex flex-col">
+    <div>
+      <h4 class="">
+        <a href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+      </h4>
+    </div>
+    <div>
+      <p class="italic">{{ .Params.lead }}</p>
+    </div>
+  </div>
+  <div class="">
+    {{ $categories:= .Params.categories }}
+    {{ if $categories }}
+    <ul class="mb-8">
       <li class="mr-4 inline-block">
         <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
           <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
@@ -20,19 +29,21 @@
       <li class="mr-4 inline-block">
         <i class="fa-regular fa-folder mr-1"></i>
         {{ range $i,$p:= $categories }}
-          <a
-            href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-            class="ms-1"
-            >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-              {{- "," }}
-            {{ end }}
-          </a>
+        <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/" class="ms-1">{{ . | humanize }}{{ if ne $i
+          (sub (len $categories) 1) }}
+          {{- "," }}
+          {{ end }}
+        </a>
         {{ end }}
       </li>
     </ul>
-  {{ end }}
-  <p class="mb-6">{{ .Summary | plainify }}</p>
-  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
-    {{ T "read_more" }}
-  </a>
-</div>
+    {{ end }}
+    <div class="mb-2">
+      <p class="">{{ .Summary | plainify }}</p>
+    </div>
+    <div class="flex flex-row justify-end">
+    <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+      {{ T "read_more" }}
+    </a></div>
+  </div>
+  </div>
