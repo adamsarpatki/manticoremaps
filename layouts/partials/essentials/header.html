@@ -5,10 +5,10 @@
       <!-- navbar brand/logo -->
       <a class="navbar-brand block" href="{{ site.Home.RelPermalink }}">
         {{ partial "logo" }}
+        {{ with site.Params.subtitle }}
+        <p class="text-sm text-gray-500 mt-1">{{ . }}</p>
+        {{ end }}
       </a>
-      {{ with site.Params.subtitle }}
-      <p class="text-sm text-gray-500 mt-1">{{ . }}</p>
-      {{ end }}
     </div>
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
