@@ -1,8 +1,11 @@
 ---
 # Common-Defined params
 title: "Hibernia Continent Map"
+meta_title: ""
+author: "Ádám Sárpátki"
 date: "2024-12-19"
 description: "North of the White Depths lies the continent of Hibernia, a land of extremities and historical significance."
+image: "images/hibernia_continent_map_post_thumbnail.jpg"
 categories:
   - "Maps"
   - "Homebrew"
@@ -11,33 +14,17 @@ tags:
   - "Arctic"
   - "Frigid"
   - "Fantasy"
-
-# Theme-Defined params
-thumbnail: "img/hibernia_continent_map_post_thumbnail.jpg"
-images: ["img/hibernia_continent_map_post_thumbnail.jpg"]
 lead: "The map of Hibernia, the coldest and furthest continent in the world." # Lead text
 draft: false
-comments: false # Enable Disqus comments for specific page
-authorbox: true # Enable authorbox for specific page
-pager: true # Enable pager navigation (prev/next) for specific page
-toc: false # Enable Table of Contents for specific page
-mathjax: true # Enable MathJax for specific page
-sidebar: "right" # Enable sidebar (on the right side) per page
-widgets: # Enable sidebar widgets in given order per page
-  - "search"
-  - "recent"
-  - "categories"
-  - "taglist"
-  - "social"
 ---
-
-![The map of Hibernia, the coldest and furthest continent in the world.](../hibernia_continent_labels_241218_x050.jpg)
 
 *North of the White Depths lies the continent of Hibernia. It is a land of extremities and historical significance, and its southern region is home to Askaheimr, the northernmost kingdom of humans. In the north, the lands of Eredore are home to fearsome giants and peaceful goliaths. A splinter group of the drow lives in their crystalline city near the barren slopes of the Adamantine Sierras.*
 
 *Cold and wind, rain and snow are constant companions to anyone who travels here, and while the Aska people may seem standoffish at first, their frosty demeanour thaws as quickly as rime on a sunny spring day.*
 
 *So come, traveller, visit the legendary Mount Sorrow that once covered our world in ash, look for treasures in the Forest of Souls, and be welcome in Rustrun, the farthest human city in the world.*
+
+![The map of Hibernia, the coldest and furthest continent in the world.](../hibernia_continent_labels_241218_x050.jpg)
 
 At first, Hibernia was only a sliver of a continent on the northern side of my Gorlassar continent map. Just enough to give two of our players some things to consider when creating their characters.
 

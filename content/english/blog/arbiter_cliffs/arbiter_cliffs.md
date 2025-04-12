@@ -1,8 +1,10 @@
 ---
-# Common-Defined params
 title: "Arbiter Cliffs"
+meta_title: ""
+author: "Ádám Sárpátki"
 date: "2024-09-21"
 description: "South of the Misty Woods and the land of the elves are the Arbiter Cliffs, an area with a sinister history."
+image: "/images/arbiter_cliffs_post_thumbnail.jpg"
 categories:
   - "Maps"
   - "Homebrew"
@@ -12,31 +14,15 @@ tags:
   - "Temperate"
   - "Postcard"
   - "Fantasy"
-
-# Theme-Defined params
-thumbnail: "img/arbiter_cliffs_post_thumbnail.jpg"
-images: ["img/arbiter_cliffs_post_thumbnail.jpg"]
 lead: "An ominous area turned quiet haven" # Lead text
 draft: false
-comments: false # Enable Disqus comments for specific page
-authorbox: true # Enable authorbox for specific page
-pager: true # Enable pager navigation (prev/next) for specific page
-toc: false # Enable Table of Contents for specific page
-mathjax: true # Enable MathJax for specific page
-sidebar: "right" # Enable sidebar (on the right side) per page
-widgets: # Enable sidebar widgets in given order per page
-  - "search"
-  - "recent"
-  - "categories"
-  - "taglist"
-  - "social"
 ---
-
-![The map of Arbiter Cliffs, an area steeped in sinister history.](../arbiter_cliffs_postcard_full_nolabel_nowatermark_web.jpg)
 
 *South of the Misty Woods and the land of the elves are the Arbiter Cliffs, an area with a sinister history. Long before the Velendrian Empire assimilated these lands, warring petty monarchs ruled between the Glistening River, the Windless Rise and the Brandywood. One of these monarchs, Brath III, loved listening to the screams of his enemies, so the high Arbiter Cliffs were the perfect location for public executions. The relatively smooth precipice meant no annoying rocks to prematurely break the fall of the condemned.*
 
 *After Velendria unified these lands and brought order to the area, a new settlement, Rookerdenn, was founded at the foot of the Cliffs to signal the coming of a new, more just and peaceful era.*
+
+![The map of Arbiter Cliffs, an area steeped in sinister history.](../arbiter_cliffs_postcard_full_nolabel_nowatermark_web.jpg)
 
 When I originally drew my map of Gorlassar--the setting of my homebrew campaign--the Arbiter Cliffs didn't even have a name. After I redrew much of the map (mostly the forests), I named a few new areas, including this, thinking that the name sounded cool, and it also felt quite ominous, positioned between Ulmara's Wake and the Misty Woods.
 
