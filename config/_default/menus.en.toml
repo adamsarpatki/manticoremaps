@@ -16,11 +16,6 @@ name = "Blog"
 url = "/blog/"
 weight = 2
 
-[[main]]
-name = "Contact"
-url = "/contact"
-weight = 3
-
 # footer menu
 [[footer]]
 name = "About Me"
