@@ -1,5 +1,5 @@
-<p class="md__image img__shadow">
-    <a href="{{ .Destination | safeURL }}" target="_blank">
-          <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title }} title="{{ . }}"{{ end }} />
+<p class="">
+    <a href="{{ .Destination | safeURL }}" target="_blank" class="">
+          <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" class="img__shadow" {{ with .Title }} title="{{ . }}"{{ end }} />
     </a>
 </p>
