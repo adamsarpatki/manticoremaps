@@ -3,10 +3,10 @@
 {{ with .Params.banner }}
 <section class="section pt-14">
     <div class="container">
+        <div class="">
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto" ) }}
+        </div>
             <div class="justify-center mb-8 text-center flex flex-col gap-y-2">
-                <div class="">
-                    {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
-                </div>
                 <h1 class="mb-4 text-h3 lg:text-h1">
                     {{ .title | markdownify }}
                 </h1>
