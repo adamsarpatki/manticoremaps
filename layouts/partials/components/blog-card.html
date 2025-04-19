@@ -22,20 +22,25 @@
     {{ if $categories }}
     <ul class="">
       <li class="mr-4 inline-block">
-        <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/" class="text-sm text-gray-500">
-          <i class="fa-regular fa-circle-user mr-2 text-gray-500"></i>{{ .Params.author }}
+        <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/" class="text-sm text-sky-800">
+          <i class="fa-regular fa-circle-user mr-2 text-sky-800"></i>{{ .Params.author }}
         </a>
       </li>
       <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1 text-gray-500"></i>
+        <i class="fa-regular fa-folder mr-1 text-sky-800"></i>
         {{ range $i,$p:= $categories }}
-        <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/" class="text-sm text-gray-500">{{ . |
+        <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/" class="text-sm text-sky-800">{{ . |
           humanize }}{{ if ne $i
           (sub (len $categories) 1) }}
           {{- "," }}
           {{ end }}
         </a>
         {{ end }}
+      </li>
+      <li class="mr-4 inline-block">
+        <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/" class="text-sm text-sky-800">
+          <i class="fa-regular fa-clock mr-2 text-sky-800"></i>{{ time.Format ":date_long" .PublishDate }}
+        </a>
       </li>
     </ul>
     {{ end }}
